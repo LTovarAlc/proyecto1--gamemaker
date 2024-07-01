@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Conjuntos de casillas","folderPath":"folders/Conjuntos de casillas.yy","name":"Conjuntos de casillas","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Curvas de animación","folderPath":"folders/Curvas de animación.yy","name":"Curvas de animación","resourceType":"GMFolder","resourceVersion":"2.0",},
