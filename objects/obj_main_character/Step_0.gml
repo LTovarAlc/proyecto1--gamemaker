@@ -4,24 +4,27 @@ if (keyboard_check(vk_left)) {
 } else if (keyboard_check(vk_right)) {
     hspeed = move_speed;  // Mover a la derecha
 } else {
-    hspeed = 0;  // Detener movimiento horizontal si no se presiona ninguna tecla
+    hspeed = 0;  
 }
 
 // Salto
-if (keyboard_check_pressed(vk_space) && vspeed < 0.6) {  // Saltar solo si el personaje está en el suelo
-    vspeed = jump_speed;
-	show_debug_message("espacio presionao")
+if (keyboard_check_pressed(vk_space) && place_meeting(x, y + 1, obj_floor)) {
+    vspeed = jump_speed;  // Saltar solo si el personaje está en contacto con el suelo
 }
 
-// Aplicar gravedad
-vspeed += gravity;
+// Aplicar gravedad solo si no está en contacto con el suelo
+if (!place_meeting(x, y + 1, obj_floor)) {
+    vspeed += gravity;
+}
 
-// Mover al personaje
+// Movimiento
 x += hspeed;
 y += vspeed;
 
 // Colisión con el suelo
-if (y > room_height - sprite_height / 2) {  // Suponiendo que el suelo está en la parte inferior de la room
-    y = room_height - sprite_height / 2;
-    vspeed = 0;  // Detener la velocidad vertical al tocar el suelo
+if (place_meeting(x, y, obj_floor)) {
+    vspeed = 0;
+    while (place_meeting(x, y, obj_floor)) {
+        y -= 1;
+    }
 }
