@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_main_character",
+  "%Name":"obj_fogas",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_fogas","path":"objects/obj_fogas/obj_fogas.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_main_character",
+  "name":"obj_fogas",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_main_character",
-    "path":"sprites/spr_main_character/spr_main_character.yy",
+    "name":"spr_fogas_front",
+    "path":"sprites/spr_fogas_front/spr_fogas_front.yy",
   },
   "spriteMaskId":null,
   "visible":true,
