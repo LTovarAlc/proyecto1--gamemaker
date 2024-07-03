@@ -1,10 +1,8 @@
 // Movimiento horizontal
 if (keyboard_check(vk_left)) {
-    hspeed = -move_speed;  // Mover a la izquierda
-    image_xscale = -1;  // Voltear el sprite hacia la izquierda
+    hspeed = -move_speed;  // Mover a la 
 } else if (keyboard_check(vk_right)) {
     hspeed = move_speed;  // Mover a la derecha
-    image_xscale = 1;  // Voltear el sprite hacia la derecha
 } else {
     hspeed = 0;  
 }
