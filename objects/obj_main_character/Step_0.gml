@@ -33,3 +33,17 @@ if (collision_active && (place_meeting(x, y, obj_floor) || place_meeting(x, y, o
         y -= 1;
     }
 }
+
+// Colisión con obj_fogas
+if (place_meeting(x, y, obj_fogas)) {
+    var fogas = instance_place(x, y, obj_fogas);
+    if (fogas != noone) {
+        if (vspeed > 0) { // Si está cayendo (ha saltado encima de obj_fogas)
+            vspeed = jump_speed; // Realiza otro salto
+            instance_destroy(fogas); // Destruye obj_fogas
+        } else { // Si ha colisionado lateralmente
+            gravity_active = false;
+            collision_active = false;
+        }
+    }
+}

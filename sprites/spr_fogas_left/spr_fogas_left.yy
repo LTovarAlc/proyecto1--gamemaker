@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_fogas_left",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":63,
   "bbox_left":23,
   "bbox_right":42,
-  "bbox_top":40,
+  "bbox_top":48,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
