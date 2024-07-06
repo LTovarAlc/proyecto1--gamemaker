@@ -11,7 +11,7 @@ if (keyboard_check(vk_left)) {
 }
 
 // Verificar si el personaje está sobre el suelo o una plataforma
-var _on_ground = place_meeting(x, y + 1, obj_floor) || place_meeting(x, y + 1, obj_platform);
+var _on_ground = place_meeting(x, y + 1, obj_dirt) || place_meeting(x, y + 1, obj_platform);
 
 // Salto
 if (keyboard_check_pressed(vk_space) && _on_ground) {
@@ -28,9 +28,9 @@ x += hspeed;
 y += vspeed;
 
 // Colisión con el suelo solo si las colisiones están activas
-if (collision_active && (place_meeting(x, y, obj_floor) || place_meeting(x, y, obj_platform))) {
+if (collision_active && (place_meeting(x, y, obj_dirt) || place_meeting(x, y, obj_platform))) {
     vspeed = 0;
-    while (place_meeting(x, y, obj_floor) || place_meeting(x, y, obj_platform)) {
+    while (place_meeting(x, y, obj_dirt) || place_meeting(x, y, obj_platform)) {
         y -= 1;
     }
 }

@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_estalacitaInfernal_big",
+  "%Name":"obj_dirt",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_estalacitaInfernal_big",
+  "name":"obj_dirt",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_estalcitaInfernal_big",
-    "path":"sprites/spr_estalcitaInfernal_big/spr_estalcitaInfernal_big.yy",
+    "name":"spr_dirt",
+    "path":"sprites/spr_dirt/spr_dirt.yy",
   },
   "spriteMaskId":null,
   "visible":true,
