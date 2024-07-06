@@ -9,3 +9,8 @@ depth = -100; // Valor alto para que el objeto se dibuje en el fondo
 // Inicializar variables para el control de gravedad y colisiones
 gravity_active = true;
 collision_active = true;
+
+// sprites
+
+sprite_running = spr_main_characterRunning
+sprite_front = spr_main_character

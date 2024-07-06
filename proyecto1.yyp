@@ -51,6 +51,7 @@
     {"id":{"name":"spr_fogas_left","path":"sprites/spr_fogas_left/spr_fogas_left.yy",},},
     {"id":{"name":"spr_lavalake","path":"sprites/spr_lavalake/spr_lavalake.yy",},},
     {"id":{"name":"spr_main_character","path":"sprites/spr_main_character/spr_main_character.yy",},},
+    {"id":{"name":"spr_main_characterRunning","path":"sprites/spr_main_characterRunning/spr_main_characterRunning.yy",},},
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},},
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},},
     {"id":{"name":"spr_spikeSmall","path":"sprites/spr_spikeSmall/spr_spikeSmall.yy",},},
