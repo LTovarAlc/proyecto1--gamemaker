@@ -11,5 +11,5 @@ collision_active = true;
 
 // sprites
 
-sprite_running = spr_main_characterRunning
+sprite_running = spr_main_character_running
 sprite_front = spr_main_character
