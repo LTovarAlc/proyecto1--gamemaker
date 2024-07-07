@@ -35,18 +35,15 @@ if (collision_active) {
     if (place_meeting(x, y, obj_floor) || place_meeting(x, y, obj_platform)) {
         if (vspeed > 0) { // Solo ajustar si está cayendo
             vspeed = 0;
-            while (place_meeting(x, y, obj_floor) || place_meeting(x, y, obj_platform)) {
-                y -= 1;
+            var _move_amount = 0.25; // La cantidad que moverás al personaje para corregir la colisión
+            while ((place_meeting(x, y, obj_floor) || place_meeting(x, y, obj_platform)) && _move_amount > 0.01) {
+                y -= _move_amount;
+                _move_amount *= 0.5; // Reduce la cantidad de movimiento para evitar ajustes bruscos
             }
         }
-    } else if (place_meeting(x, y, obj_floor)) {
-        // Ajustar la posición y en función de la inclinación de la rampa
-        while (place_meeting(x, y, obj_floor)) {
-            y -= 1;
-        }
-        vspeed = 0;
     }
 }
+
 
 // Colisión con obj_fogas
 if (place_meeting(x, y, obj_fogas)) {
