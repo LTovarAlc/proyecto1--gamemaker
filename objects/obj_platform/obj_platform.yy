@@ -8,8 +8,8 @@
   "name":"obj_platform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"structures",
+    "path":"folders/Objetos/structures.yy",
   },
   "parentObjectId":null,
   "persistent":false,
