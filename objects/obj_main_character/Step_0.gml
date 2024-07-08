@@ -13,7 +13,7 @@ if (keyboard_check(ord("A"))) {
 }
 
 // Verificar si el personaje está sobre el suelo o una plataforma
-var _on_ground = place_meeting(x, y + 1, obj_floor) || place_meeting(x, y + 1, obj_platform) || place_meeting(x, y + 1, obj_floor);
+var _on_ground = place_meeting(x, y + 1, obj_floor) || place_meeting(x, y + 1, obj_platform) || place_meeting(x, y + 1, obj_floor)|| place_meeting(x, y, obj_elevator);
 
 // Saltos
 if (keyboard_check_pressed(vk_space) && _on_ground) {

@@ -35,6 +35,7 @@
   "name":"proyecto1",
   "resources":[
     {"id":{"name":"obj_dirt","path":"objects/obj_dirt/obj_dirt.yy",},},
+    {"id":{"name":"obj_elevator","path":"objects/obj_elevator/obj_elevator.yy",},},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_fogas","path":"objects/obj_fogas/obj_fogas.yy",},},
     {"id":{"name":"obj_main_character","path":"objects/obj_main_character/obj_main_character.yy",},},
