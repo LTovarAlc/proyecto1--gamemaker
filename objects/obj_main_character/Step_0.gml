@@ -1,58 +1,49 @@
-// Movimiento horizontal
-if (keyboard_check(vk_left)) {
-    hspeed = -move_speed;  // Mover a la izquierda
-    sprite_index = spr_main_character_running;
-    image_xscale = -1; // Voltear el sprite hacia la izquierda
-} else if (keyboard_check(vk_right)) {
-    hspeed = move_speed;  // Mover a la derecha
-    sprite_index = spr_main_character_running;
-    image_xscale = 1; // Orientar el sprite hacia la derecha
+// Movimiento horizontal con teclas "A" y "D"
+if (keyboard_check(ord("A"))) {
+    hspeed = -move_speed;
+    sprite_index = sprite_running;
+    image_xscale = -1;
+} else if (keyboard_check(ord("D"))) {
+    hspeed = move_speed; 
+    sprite_index = sprite_running;
+    image_xscale = 1;
 } else {
-    hspeed = 0;  
+    hspeed = 0;
     sprite_index = sprite_front;
-    // Mantener la orientación del sprite según la última dirección
 }
 
-// Verificar si el personaje está sobre el suelo, una plataforma o una rampa
+// Verificar si el personaje está sobre el suelo o una plataforma
 var _on_ground = place_meeting(x, y + 1, obj_floor) || place_meeting(x, y + 1, obj_platform) || place_meeting(x, y + 1, obj_floor);
 
-// Salto
+// Saltos
 if (keyboard_check_pressed(vk_space) && _on_ground) {
-    vspeed = jump_speed;  // Saltar solo si el personaje está en contacto con el suelo, una plataforma o una rampa
+    vspeed = jump_speed; // Saltar solo si el personaje está en contacto con el suelo
 }
 
-// Aplicar gravedad solo si no está en contacto con el suelo, una plataforma o una rampa y la gravedad está activa
+// Aplicar gravedad solo si no está en contacto con el suelo o una plataforma y la gravedad está activa
 if (gravity_active && !_on_ground) {
     vspeed += gravity;
 }
 
-// Movimiento
 x += hspeed;
 y += vspeed;
 
 // Colisión con el suelo solo si las colisiones están activas
 if (collision_active) {
-    if (place_meeting(x, y, obj_floor) || place_meeting(x, y, obj_platform)) {
-        if (vspeed > 0) { // Solo ajustar si está cayendo
-            vspeed = 0;
-            var _move_amount = 0.25; // La cantidad que moverás al personaje para corregir la colisión
-            while ((place_meeting(x, y, obj_floor) || place_meeting(x, y, obj_platform)) && _move_amount > 0.01) {
-                y -= _move_amount;
-                _move_amount *= 0.5; // Reduce la cantidad de movimiento para evitar ajustes bruscos
-            }
-        }
+    if (place_meeting(x, y + vspeed, obj_floor) || place_meeting(x, y + vspeed, obj_platform)) {
+        y = floor(y);
+        vspeed = 0;
     }
 }
-
 
 // Colisión con obj_fogas
 if (place_meeting(x, y, obj_fogas)) {
     var _fogas = instance_place(x, y, obj_fogas);
     if (_fogas != noone) {
-        if (vspeed > 0) { // Si está cayendo (ha saltado encima de obj_fogas)
-            vspeed = jump_speed; // Realiza otro salto
-            instance_destroy(_fogas); // Destruye obj_fogas
-        } else { // Si ha colisionado lateralmente
+        if (vspeed > 0) { // caer encima del fogas
+            vspeed = jump_speed; //salto extra (efecto rebote)
+            instance_destroy(_fogas);
+        } else { //collision lateral
             gravity_active = false;
             collision_active = false;
         }
