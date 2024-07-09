@@ -3,6 +3,7 @@ vspeed = 0;  // velocidad vertical
 gravity = 0.2;  // gravedad
 jump_speed = -5;  // velocidad del salto
 move_speed = 1.01;  // velocidad de movimiento
+depth = -100
 
 // Inicializar variables para el control de gravedad y colisiones
 gravity_active = true;
