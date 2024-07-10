@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
+    "name":"spr_dirt",
+    "path":"sprites/spr_dirt/spr_dirt.yy",
   },
   "spriteMaskId":null,
   "visible":true,
