@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_floor_center",
-  "eventList":[],
+  "%Name":"obj_bomper",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_rudy","path":"objects/obj_rudy/obj_rudy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_floor_center",
+  "name":"obj_bomper",
   "overriddenProperties":[],
   "parent":{
-    "name":"floor",
-    "path":"folders/Objetos/floor.yy",
+    "name":"monsters",
+    "path":"folders/Objetos/monsters.yy",
   },
-  "parentObjectId":{
-    "name":"obj_wall",
-    "path":"objects/obj_wall/obj_wall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_floor_center",
-    "path":"sprites/spr_floor_center/spr_floor_center.yy",
+    "name":"spr_bomper",
+    "path":"sprites/spr_bomper/spr_bomper.yy",
   },
   "spriteMaskId":null,
   "visible":true,
