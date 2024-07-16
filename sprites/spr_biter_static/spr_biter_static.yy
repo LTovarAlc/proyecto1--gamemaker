@@ -36,8 +36,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"monsters",
-    "path":"folders/Sprites/monsters.yy",
+    "name":"biter",
+    "path":"folders/Sprites/monsters/biter.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
