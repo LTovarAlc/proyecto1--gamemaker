@@ -1,5 +1,3 @@
-// Evento Step en obj_rudy
-
 // MOVIMIENTO VERTICAL
 if (keyboard_check(ord("A"))) {
     hspeed = -move_speed;
@@ -15,8 +13,9 @@ if (keyboard_check(ord("A"))) {
 }
 
 // SALTOS
-if (keyboard_check_pressed(vk_space) && !place_meeting(x + 1, y, obj_floor_top) && !place_meeting(x + 1, y, obj_floor_corner) && !place_meeting(x + 1, y, obj_elevador)) {
+if (keyboard_check_pressed(vk_space) && jump_count < max_jumps) {
     vspeed = jump_speed;
+    jump_count += 1;
 }
 
 // APLICAR GRAVEDAD
@@ -57,4 +56,9 @@ if (!place_meeting(x, y + 1, obj_elevador)) {
     with (obj_elevador) {
         is_active = false;
     }
+}
+
+// Verificar si obj_rudy está en el suelo para reiniciar el contador de saltos
+if (place_meeting(x, y + 1, obj_floor_top) || place_meeting(x, y + 1, obj_floor_corner) || place_meeting(x, y + 1, obj_elevador)) {
+    jump_count = 0;
 }
