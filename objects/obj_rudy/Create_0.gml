@@ -3,7 +3,7 @@ hspeed = 0;
 vspeed = 0;
 gravity = 0.2
 jump_speed = -5
-move_speed = 1.01
+move_speed = 0.8
 path = 100
 
 //saltos
