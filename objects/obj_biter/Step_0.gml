@@ -1,6 +1,6 @@
 switch (state) {
     case "move_to_target":
-        //sprite_index = biter_running;
+        sprite_index = biter_running;
 		image_xscale = -1
         x += move_speed;
         if (x >= target_x) {
@@ -19,7 +19,7 @@ switch (state) {
         break;
 
     case "move_to_initial":
-        //sprite_index = biter_running;
+        sprite_index = biter_running;
 		image_xscale = 1 
         x -= move_speed;
         if (x <= initial_x) {
