@@ -52,7 +52,7 @@
     {"id":{"name":"obj_rudy","path":"objects/obj_rudy/obj_rudy.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"level1","path":"rooms/level1/level1.yy",},},
-    {"id":{"name":"biter_biteproto","path":"sprites/biter_biteproto/biter_biteproto.yy",},},
+    {"id":{"name":"spr_biter_bite","path":"sprites/spr_biter_bite/spr_biter_bite.yy",},},
     {"id":{"name":"spr_biter_running","path":"sprites/spr_biter_running/spr_biter_running.yy",},},
     {"id":{"name":"spr_biter_static","path":"sprites/spr_biter_static/spr_biter_static.yy",},},
     {"id":{"name":"spr_bomper","path":"sprites/spr_bomper/spr_bomper.yy",},},
