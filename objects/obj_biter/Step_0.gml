@@ -1,3 +1,9 @@
+
+if (delay_timer > 0) {
+    delay_timer--;
+    return;
+}
+
 switch (state) {
     case "move_to_target":
         sprite_index = biter_running;
