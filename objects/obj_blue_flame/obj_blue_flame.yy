@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spell_blue_flame",
-    "path":"sprites/spr_spell_blue_flame/spr_spell_blue_flame.yy",
+    "name":"spr_spell_blue",
+    "path":"sprites/spr_spell_blue/spr_spell_blue.yy",
   },
   "spriteMaskId":null,
   "visible":true,
