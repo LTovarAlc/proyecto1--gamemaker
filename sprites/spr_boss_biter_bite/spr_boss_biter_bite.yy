@@ -3,7 +3,7 @@
   "%Name":"spr_boss_biter_bite",
   "bboxMode":0,
   "bbox_bottom":202,
-  "bbox_left":15,
+  "bbox_left":20,
   "bbox_right":242,
   "bbox_top":112,
   "collisionKind":1,
@@ -12,9 +12,6 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f8ba1396-e633-4fba-8621-c10b7323c17b","name":"f8ba1396-e633-4fba-8621-c10b7323c17b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c535e4be-7f7a-4e06-b2b9-1dc49440573d","name":"c535e4be-7f7a-4e06-b2b9-1dc49440573d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"2319c32b-bff3-4073-a9ed-46fb9d63ef3f","name":"2319c32b-bff3-4073-a9ed-46fb9d63ef3f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"65e6a1ea-fb37-4196-9c77-e3da5b4868fa","name":"65e6a1ea-fb37-4196-9c77-e3da5b4868fa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"e6ae037a-2dc3-463b-ae71-0b08f5b13ef6","name":"e6ae037a-2dc3-463b-ae71-0b08f5b13ef6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"8096a57d-d392-48f6-a633-a20b7b551256","name":"8096a57d-d392-48f6-a633-a20b7b551256","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -23,8 +20,6 @@
     {"$GMSpriteFrame":"","%Name":"e4336e6f-83b0-4548-9a55-78efac29c432","name":"e4336e6f-83b0-4548-9a55-78efac29c432","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"50e68c0f-50e3-43d4-aa5a-aafe2aafe395","name":"50e68c0f-50e3-43d4-aa5a-aafe2aafe395","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"31c04f73-94b7-4697-bf5f-27a28e9017a5","name":"31c04f73-94b7-4697-bf5f-27a28e9017a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"84bbefad-93ef-44ed-9e86-28a74e96c7bd","name":"84bbefad-93ef-44ed-9e86-28a74e96c7bd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"92562789-786c-47e9-b21b-5758004be885","name":"92562789-786c-47e9-b21b-5758004be885","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -61,7 +56,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":13.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -71,7 +66,7 @@
     },
     "name":"spr_boss_biter_bite",
     "playback":1,
-    "playbackSpeed":25.0,
+    "playbackSpeed":13.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -81,44 +76,29 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f8ba1396-e633-4fba-8621-c10b7323c17b","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4371606d-8fb1-48ff-98c5-2b589505d758","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c535e4be-7f7a-4e06-b2b9-1dc49440573d","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2311be57-91a9-4d66-90ea-5ce77d2cabaa","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2319c32b-bff3-4073-a9ed-46fb9d63ef3f","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0cbc1949-73f5-4dff-9255-cf75a4551911","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"65e6a1ea-fb37-4196-9c77-e3da5b4868fa","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c70ba68d-8036-43d9-842c-61d2a547a9e4","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"c70ba68d-8036-43d9-842c-61d2a547a9e4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e6ae037a-2dc3-463b-ae71-0b08f5b13ef6","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2b8dab63-8e04-4fa0-a6b3-bb5b3e9053dc","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"2b8dab63-8e04-4fa0-a6b3-bb5b3e9053dc","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8096a57d-d392-48f6-a633-a20b7b551256","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"64f35b25-5689-4aaf-9553-95797593dee6","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"64f35b25-5689-4aaf-9553-95797593dee6","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e39a8201-9769-49ec-9cc3-1c190e18010e","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cf8580f0-991b-4366-b0ff-e5e086295952","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"cf8580f0-991b-4366-b0ff-e5e086295952","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6937ff6c-0ba7-491d-b584-a287ab89399c","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"60259d93-6093-4152-a520-d0207a3938d2","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"60259d93-6093-4152-a520-d0207a3938d2","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e4336e6f-83b0-4548-9a55-78efac29c432","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7ce28313-1f0c-4703-9330-b1a1eb980a8f","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"7ce28313-1f0c-4703-9330-b1a1eb980a8f","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50e68c0f-50e3-43d4-aa5a-aafe2aafe395","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8aa133a2-97a3-4848-a8aa-33959891686f","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"8aa133a2-97a3-4848-a8aa-33959891686f","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"31c04f73-94b7-4697-bf5f-27a28e9017a5","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8219f584-9476-4298-8012-ac4c0134e2eb","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"84bbefad-93ef-44ed-9e86-28a74e96c7bd","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7d6a3efe-9092-4ba5-974d-88c39db9f35f","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"92562789-786c-47e9-b21b-5758004be885","path":"sprites/spr_boss_biter_bite/spr_boss_biter_bite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9b0ebacb-7a24-4f5e-8bd5-04ecc3cf70bb","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"8219f584-9476-4298-8012-ac4c0134e2eb","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

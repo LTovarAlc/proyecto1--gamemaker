@@ -18,7 +18,7 @@ wait_timer = 0; // Temporizador de espera
 
 delay_timer = 0.5
 
-if (id == inst_61F1BAE0) {
+if (id == inst_61F1BAE0 && inst_52EF4D7C) {
     delay_timer = 3.6 * room_speed;
 } else {
     delay_timer = 0;
