@@ -13,3 +13,6 @@ max_jumps = 2
 //sprites
 sprite_running = spr_rudy
 sprite_static = spr_rudy_moving
+
+//hechizos
+global.ice_power_enabled = false
