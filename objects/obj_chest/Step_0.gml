@@ -8,7 +8,7 @@ if (!opened) {
         opened = true; // Marcar el cofre como abierto
 
         // Crear el hechizo en la posición del cofre
-        instance_create_layer(x, y, "spells", obj_blue_flame);
+        instance_create_layer(x, y, "spells", obj_ice_item);
     }
 } else {
     // Detener la animación una vez que termine

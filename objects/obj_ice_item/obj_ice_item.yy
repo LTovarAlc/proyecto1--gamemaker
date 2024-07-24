@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_blue_flame",
-  "eventList":[],
+  "%Name":"obj_ice_item",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_blue_flame",
+  "name":"obj_ice_item",
   "overriddenProperties":[],
   "parent":{
-    "name":"blueFlame",
-    "path":"folders/Objetos/spells/blueFlame.yy",
+    "name":"ice",
+    "path":"folders/Objetos/spells/ice.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spell_blue",
-    "path":"sprites/spr_spell_blue/spr_spell_blue.yy",
+    "name":"spr_item_ice",
+    "path":"sprites/spr_item_ice/spr_item_ice.yy",
   },
   "spriteMaskId":null,
   "visible":true,
