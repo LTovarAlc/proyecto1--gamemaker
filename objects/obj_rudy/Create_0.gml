@@ -16,3 +16,4 @@ sprite_static = spr_rudy_moving
 
 //hechizos
 global.ice_power_enabled = false
+shot_cooldown = 0;

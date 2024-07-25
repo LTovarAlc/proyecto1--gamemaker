@@ -1,6 +1,3 @@
-// Evento "Create" de obj_ice_spell
-image_angle = direction; // Ajustar el ángulo de la imagen según la dirección
-
 // Evento "Step" de obj_ice_spell
 // Aquí puedes agregar la lógica para lo que sucede cuando el disparo colisiona con algo, por ejemplo:
 if (place_meeting(x, y, obj_wall) || place_meeting(x, y, obj_biter)) {
