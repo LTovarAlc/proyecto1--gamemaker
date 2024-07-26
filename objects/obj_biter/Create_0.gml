@@ -1,3 +1,5 @@
+// Evento "Create" de obj_biter
+
 // Asignar sprites
 biter_static = spr_biter_static;
 biter_running = spr_biter_running;
@@ -16,10 +18,14 @@ second_wait_time = 1 * room_speed; // Segundo tiempo de espera en frames (2 segu
 state = "move_to_target"; // estado inicial 
 wait_timer = 0; // Temporizador de espera
 
-delay_timer = 0.5
+delay_timer = 0.5;
 
 if (id == inst_61F1BAE0 && inst_52EF4D7C) {
     delay_timer = 3.6 * room_speed;
 } else {
     delay_timer = 0;
 }
+
+// Variables de vida
+max_health = 80; // Vida máxima
+current_health = 80; // Vida actual

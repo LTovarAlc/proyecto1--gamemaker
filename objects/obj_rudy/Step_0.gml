@@ -76,3 +76,9 @@ if (keyboard_check_pressed(ord("Q")) && global.ice_power_enabled && shot_cooldow
     spell.speed = 6; // Ajusta la velocidad según sea necesario
     shot_cooldown = room_speed; // Ajustar a 1 segundo (room_speed es el número de pasos por segundo)
 }
+
+// Disminucion de barra de vida
+if (keyboard_check_pressed(ord("H"))) {
+    current_health -= 10;
+    if (current_health < 0) current_health = 0; // Asegurarse de que la vida no sea negativa
+}
