@@ -21,3 +21,6 @@ current_sub_target = initial_x - sub_target_distance; // Primer sub-destino
 // Duraciones de los ataques
 attack_1_duration = 0.5 * room_speed; // Tiempo de ataque 1 (0.5 segundos)
 attack_2_duration = 0.5 * room_speed; // Tiempo de ataque 2 (0.8 segundos)
+
+max_health = 330 //vida maxima
+current_health = 330 //vida actual

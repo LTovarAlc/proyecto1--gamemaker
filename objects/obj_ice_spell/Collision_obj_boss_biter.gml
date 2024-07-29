@@ -1,4 +1,4 @@
-// Evento "Collision" de obj_ice_spell con obj_biter
+// Evento "Collision" de obj_ice_spell con obj_boss_biter
 
 // Reducir la vida del enemigo en 22 puntos
 other.current_health -= damage;

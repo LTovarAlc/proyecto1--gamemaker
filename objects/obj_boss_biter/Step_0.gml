@@ -130,3 +130,8 @@ switch (state) {
         // Aquí podrías agregar cualquier lógica adicional que necesites para este estado
         break;
 }
+
+if (current_health <= 0) {
+    instance_destroy(); 
+    exit;
+}
