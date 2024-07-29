@@ -6,13 +6,13 @@ if (delay_timer > 0) {
 switch (state) {
     case "move_to_target":
         sprite_index = biter_running;
-        image_xscale = -1;
-        x += move_speed;
+        image_xscale = -1; // Orientar sprite hacia la derecha
+        x += move_speed; // Mover hacia la derecha
         
-        // Empujar a obj_rudy
+        // Empujar a obj_rudy si hay colisión
         if (instance_exists(obj_rudy) && place_meeting(x, y, obj_rudy)) {
-            var rudy = instance_place(x, y, obj_rudy);
-            rudy.x += move_speed; // Empujar a obj_rudy en la dirección del movimiento
+            var _rudy = instance_place(x, y, obj_rudy);
+            _rudy.x += move_speed; // Empujar a obj_rudy a la derecha
         }
         
         if (x >= target_x) {
@@ -23,7 +23,7 @@ switch (state) {
         break;
 
     case "wait_at_target":
-        sprite_index = biter_static;
+        sprite_index = biter_static; // Sprite estático
         wait_timer--;
         if (wait_timer <= 0) {
             state = "attack_at_target";
@@ -32,25 +32,22 @@ switch (state) {
         break;
 
     case "attack_at_target":
-        sprite_index = biter_bite;
+        sprite_index = biter_bite; // Sprite de ataque
         wait_timer--;
         if (wait_timer <= 0) {
             state = "second_wait_at_target";
             wait_timer = second_wait_time;
             
-            // Verificar colisión con obj_rudy y causar daño por mordida
+            // Si hay colisión con obj_rudy, reducir su salud
             if (instance_exists(obj_rudy) && place_meeting(x, y, obj_rudy)) {
-                var rudy = instance_place(x, y, obj_rudy);
-                rudy.current_health -= (rudy.max_health * 0.3); // 30% de la vida actual
-                
-                // Mensaje de depuración
-                show_message("Mordida: obj_rudy recibe 30% de daño. Vida actual: " + string(rudy.current_health));
+                var _rudy = instance_place(x, y, obj_rudy);
+                _rudy.current_health -= (_rudy.max_health * 0.3); // Reducir salud en 30%
             }
         }
         break;
 
     case "second_wait_at_target":
-        sprite_index = biter_static;
+        sprite_index = biter_static; // Sprite estático
         wait_timer--;
         if (wait_timer <= 0) {
             state = "move_to_initial";
@@ -59,13 +56,13 @@ switch (state) {
 
     case "move_to_initial":
         sprite_index = biter_running;
-        image_xscale = 1;
-        x -= move_speed;
+        image_xscale = 1; // Orientar sprite hacia la izquierda
+        x -= move_speed; // Mover hacia la izquierda
         
-        // Empujar a obj_rudy
+        // Empujar a obj_rudy si hay colisión
         if (instance_exists(obj_rudy) && place_meeting(x, y, obj_rudy)) {
-            var rudy = instance_place(x, y, obj_rudy);
-            rudy.x -= move_speed; // Empujar a obj_rudy en la dirección opuesta del movimiento
+            var _rudy = instance_place(x, y, obj_rudy);
+            _rudy.x -= move_speed; // Empujar a obj_rudy a la izquierda
         }
         
         if (x <= initial_x) {
@@ -76,7 +73,7 @@ switch (state) {
         break;
 
     case "wait_at_initial":
-        sprite_index = biter_static;
+        sprite_index = biter_static; // Sprite estático
         wait_timer--;
         if (wait_timer <= 0) {
             state = "attack_at_initial";
@@ -85,23 +82,21 @@ switch (state) {
         break;
 
     case "attack_at_initial":
-        sprite_index = biter_bite;
+        sprite_index = biter_bite; // Sprite de ataque
         wait_timer--;
         if (wait_timer <= 0) {
             state = "second_wait_at_initial";
             wait_timer = second_wait_time;
             
-            // Verificar colisión con obj_rudy y causar daño por mordida
             if (instance_exists(obj_rudy) && place_meeting(x, y, obj_rudy)) {
-                var rudy = instance_place(x, y, obj_rudy);
-                rudy.current_health -= (rudy.max_health * 0.3); // 30% de la vida actual
-                
+                var _rudy = instance_place(x, y, obj_rudy);
+                _rudy.current_health -= (_rudy.max_health * 0.3); // Reducir salud en 30%
             }
         }
         break;
 
     case "second_wait_at_initial":
-        sprite_index = biter_static;
+        sprite_index = biter_static; // Sprite estático
         wait_timer--;
         if (wait_timer <= 0) {
             state = "move_to_target";
@@ -109,6 +104,7 @@ switch (state) {
         break;
 }
 
+// Destrucción del biter si su salud es 0 o menor
 if (current_health <= 0) {
     instance_destroy(); 
     exit;

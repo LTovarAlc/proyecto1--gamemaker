@@ -9,10 +9,10 @@ sprite_index = spr_biter_static;
 // Variables de movimiento
 move_speed = 2.7; // velocidad
 initial_x = x; // Posición inicial en X
-target_x = initial_x + 200; // posición que se moverá el enemigo
-wait_time = 2 * room_speed; // Tiempo de espera en frames (3 segundos)
-attack_time = 1 * room_speed; // Tiempo de ataque en frames (3 segundos)
-second_wait_time = 1 * room_speed; // Segundo tiempo de espera en frames (2 segundos)
+target_x = initial_x + 200; // Posición que se moverá el enemigo
+wait_time = 2 * room_speed; // Tiempo de espera en frames
+attack_time = 1 * room_speed; // Tiempo de ataque en frames 
+second_wait_time = 1 * room_speed; // Segundo tiempo de espera
 
 // Variables de estado
 state = "move_to_target"; // estado inicial 

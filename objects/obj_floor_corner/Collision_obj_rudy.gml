@@ -1,8 +1,8 @@
 // Variables de estado para el salto
-var is_on_floor;
+var _is_on_floor;
 
 // Verificar si hay una colisión con el suelo (obj_wall u obj_floor_top)
-is_on_floor = place_meeting(x, y + 1, obj_wall) || place_meeting(x, y + 1, obj_floor_top);
+_is_on_floor = place_meeting(x, y + 1, obj_wall) || place_meeting(x, y + 1, obj_floor_top);
 
 // Verificar si hay una colisión con el personaje
 if (instance_exists(obj_rudy)) {
@@ -18,7 +18,7 @@ if (instance_exists(obj_rudy)) {
             }
             
             // Permitir saltar solo si está en el suelo
-            if (is_on_floor && keyboard_check_pressed(vk_space)) {
+            if (_is_on_floor && keyboard_check_pressed(vk_space)) {
                 vspeed = jump_speed;
             }
         }
