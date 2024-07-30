@@ -10,7 +10,7 @@ move_speed = 1.3; // velocidad
 initial_x = x; // Posición inicial en X
 sub_target_distance = 160; // distancia de cada sub-movimiento
 target_x = initial_x - 480; // posición final a la que se moverá el jefe
-wait_time = 6 * room_speed; // Tiempo total de espera en frames (10 segundos)
+wait_time = 6 * room_speed; // Tiempo total de espera en frames (6 segundos)
 wait_before_attack = 5 * room_speed; // Tiempo de espera antes del ataque (5 segundos)
 
 // Variables de estado
@@ -20,7 +20,11 @@ current_sub_target = initial_x - sub_target_distance; // Primer sub-destino
 
 // Duraciones de los ataques
 attack_1_duration = 0.5 * room_speed; // Tiempo de ataque 1 (0.5 segundos)
-attack_2_duration = 0.5 * room_speed; // Tiempo de ataque 2 (0.8 segundos)
+attack_2_duration = 0.8 * room_speed; // Tiempo de ataque 2 (0.8 segundos)
 
-max_health = 330 //vida maxima
-current_health = 330 //vida actual
+// Daño de los ataques
+damage_attack_1 = 55; // Daño de la mordida
+damage_attack_2 = 43; // Daño del lenguetazo
+
+max_health = 330; // vida maxima
+current_health = 330; // vida actual

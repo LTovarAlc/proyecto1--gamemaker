@@ -44,6 +44,12 @@ switch (state) {
         if (wait_timer <= 0) {
             state = "wait_after_attack";
             wait_timer = wait_time - wait_before_attack;
+            
+            // Reducir la salud de obj_rudy si está en contacto
+            if (instance_exists(obj_rudy) && place_meeting(x, y, obj_rudy)) {
+                var _rudy = instance_place(x, y, obj_rudy);
+                _rudy.current_health -= damage_attack_1; // Reducir salud con mordida
+            }
         }
         break;
 
@@ -55,6 +61,12 @@ switch (state) {
         if (wait_timer <= 0) {
             state = "wait_after_attack";
             wait_timer = wait_time - wait_before_attack;
+            
+            // Reducir la salud de obj_rudy si está en contacto
+            if (instance_exists(obj_rudy) && place_meeting(x, y, obj_rudy)) {
+                var _rudy = instance_place(x, y, obj_rudy);
+                _rudy.current_health -= damage_attack_2; // Reducir salud con lenguetazo
+            }
         }
         break;
 
@@ -88,6 +100,12 @@ switch (state) {
         if (wait_timer <= 0) {
             state = "wait_after_attack";
             wait_timer = wait_time - wait_before_attack - attack_1_duration;
+            
+            // Reducir la salud de obj_rudy si está en contacto
+            if (instance_exists(obj_rudy) && place_meeting(x, y, obj_rudy)) {
+                var _rudy = instance_place(x, y, obj_rudy);
+                _rudy.current_health -= damage_attack_2; // Reducir salud con lenguetazo
+            }
         }
         break;
 

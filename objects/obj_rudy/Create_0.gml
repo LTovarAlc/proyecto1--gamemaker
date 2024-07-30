@@ -19,7 +19,7 @@ global.ice_power_enabled = false;
 shot_cooldown = 0; // Temporizador de enfriamiento para el disparo
 
 // Variables de vida
-max_health = 100; // Vida máxima
-current_health = 100; // Vida actual
+max_health = 170; // Vida máxima
+current_health = 170; // Vida actual
 
 is_being_pushed = false; // Variable para verificar si está siendo empujado
