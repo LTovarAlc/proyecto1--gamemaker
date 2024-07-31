@@ -24,13 +24,13 @@ vspeed += gravity;
 
 // MOVER HORIZONTAL
 x += hspeed;
-if (place_meeting(x, y, obj_floor_top)) {
+if (place_meeting(x, y, obj_floor_desert)) {
     if (hspeed > 0) {
-        while (!place_meeting(x + 1, y, obj_floor_top) && !place_meeting(x + 1, y, obj_floor_corner) && !place_meeting(x + 1, y, obj_elevador)) {
+        while (!place_meeting(x + 1, y, obj_floor_desert) & !place_meeting(x + 1, y, obj_floor_artic)) {
             x += 1;
         }
     } else if (hspeed < 0) {
-        while (!place_meeting(x + 1, y, obj_floor_top) && !place_meeting(x + 1, y, obj_floor_corner) && !place_meeting(x + 1, y, obj_elevador)) {
+        while (!place_meeting(x + 1, y, obj_floor_desert) & !place_meeting(x + 1, y, obj_floor_artic)) {
             x -= 1;
         }
     }
@@ -41,11 +41,11 @@ if (place_meeting(x, y, obj_floor_top)) {
 y += vspeed;
 if (place_meeting(x, y, obj_wall)) {
     if (vspeed > 0) {
-        while (!place_meeting(x + 1, y, obj_floor_top) && !place_meeting(x + 1, y, obj_floor_corner) && !place_meeting(x + 1, y, obj_elevador)) {
+        while (!place_meeting(x + 1, y, obj_floor_desert) & !place_meeting(x + 1, y, obj_floor_artic) ) {
             y += 1;
         }
     } else if (vspeed < 0) {
-        while (!place_meeting(x + 1, y, obj_floor_top) && !place_meeting(x + 1, y, obj_floor_corner) && !place_meeting(x + 1, y, obj_elevador)) {
+        while (!place_meeting(x + 1, y, obj_floor_desert) & !place_meeting(x + 1, y, obj_floor_artic)) {
             y -= 1;
         }
     }
@@ -60,7 +60,7 @@ if (!place_meeting(x, y + 1, obj_elevador)) {
 }
 
 // Verificar si obj_rudy está en el suelo para reiniciar el contador de saltos
-if (place_meeting(x, y + 1, obj_floor_top) || place_meeting(x, y + 1, obj_floor_corner) || place_meeting(x, y + 1, obj_elevador)) {
+if (place_meeting(x, y + 1, obj_floor_desert )& !place_meeting(x + 1, y, obj_floor_artic) ) {
     jump_count = 0;
 }
 
@@ -86,4 +86,10 @@ if (keyboard_check_pressed(ord("H"))) {
 if (current_health <= 0) {
     instance_destroy(); 
     exit;
+}
+
+// Verificar si el personaje ha alcanzado el borde derecho de la room1
+if (x >= room_width - sprite_width / 2) {
+    // Cambiar a level2
+    room_goto(rm_level2);
 }

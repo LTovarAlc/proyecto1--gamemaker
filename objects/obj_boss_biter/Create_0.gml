@@ -26,5 +26,5 @@ attack_2_duration = 0.8 * room_speed; // Tiempo de ataque 2 (0.8 segundos)
 damage_attack_1 = 55; // Daño de la mordida
 damage_attack_2 = 43; // Daño del lenguetazo
 
-max_health = 330; // vida maxima
-current_health = 330; // vida actual
+max_health = 530; // vida maxima
+current_health = 530; // vida actual
