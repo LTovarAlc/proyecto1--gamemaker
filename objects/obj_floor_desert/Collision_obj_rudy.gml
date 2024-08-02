@@ -2,7 +2,7 @@
 var _is_on_floor;
 
 // Verificar si hay una colisión con el suelo (obj_wall u obj_floor_top)
-_is_on_floor = place_meeting(x, y + 1, obj_wall) || place_meeting(x, y + 1, obj_floor);
+_is_on_floor = place_meeting(x, y + 1, obj_wall) || place_meeting(x, y + 1, obj_floor_desert);
 
 // Verificar si hay una colisión con el personaje
 if (instance_exists(obj_rudy)) {
