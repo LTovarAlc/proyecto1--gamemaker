@@ -69,9 +69,17 @@ if (shot_cooldown > 0) {
     shot_cooldown -= 1; // Disminuir el temporizador
 }
 
+if (keyboard_check_pressed(ord("Q")) && global.rock_power_enabled && shot_cooldown <= 0) {
+    var _shot_direction = image_xscale == 1 ? 0 : 180; // 0 grados hacia la derecha, 180 grados hacia la izquierda
+    var _spell = instance_create_layer(x, y - 12, "spells", obj_rock_spell);
+    _spell.direction = _shot_direction;
+    _spell.speed = 6; // Ajusta la velocidad según sea necesario
+    shot_cooldown = room_speed; // Ajustar a 1 segundo (room_speed es el número de pasos por segundo)
+}
+
 if (keyboard_check_pressed(ord("Q")) && global.ice_power_enabled && shot_cooldown <= 0) {
     var _shot_direction = image_xscale == 1 ? 0 : 180; // 0 grados hacia la derecha, 180 grados hacia la izquierda
-    var _spell = instance_create_layer(x, y - 15, "spells", obj_ice_spell);
+    var _spell = instance_create_layer(x, y - 12, "spells", obj_ice_spell);
     _spell.direction = _shot_direction;
     _spell.speed = 6; // Ajusta la velocidad según sea necesario
     shot_cooldown = room_speed; // Ajustar a 1 segundo (room_speed es el número de pasos por segundo)

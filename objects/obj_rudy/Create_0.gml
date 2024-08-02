@@ -16,6 +16,7 @@ sprite_static = spr_rudy_moving;
 
 // Hechizos
 global.ice_power_enabled = false;
+global.rock_power_enabled = false;
 shot_cooldown = 0; // Temporizador de enfriamiento para el disparo
 
 // Variables de vida

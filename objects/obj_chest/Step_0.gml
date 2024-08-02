@@ -7,8 +7,14 @@ if (!opened) {
         image_speed = 1; // Iniciar la animación
         opened = true; // Marcar el cofre como abierto
 
-        // Crear el hechizo en la posición del cofre
-        instance_create_layer(x, y, "spells", obj_ice_item);
+        // Crear el hechizo en la posición del cofre según la room
+        if (room == rm_level1) {
+            // Room desértica
+            instance_create_layer(x, y, "spells", obj_rock_item);
+        } else if (room == rm_level2) {
+            // Room ártica
+            instance_create_layer(x, y, "spells", obj_ice_item);
+        }
     }
 } else {
     // Detener la animación una vez que termine
