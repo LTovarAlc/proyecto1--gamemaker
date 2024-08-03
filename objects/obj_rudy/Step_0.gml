@@ -95,9 +95,3 @@ if (current_health <= 0) {
     instance_destroy(); 
     exit;
 }
-
-// Verificar si el personaje ha alcanzado el borde derecho de la room1
-if (x >= room_width - sprite_width / 2) {
-    // Cambiar a level2
-    room_goto(rm_level2);
-}

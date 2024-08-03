@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_rock_spell",
+  "%Name":"obj_scorpion",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_scorpion","path":"objects/obj_scorpion/obj_scorpion.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_rock_spell",
+  "name":"obj_scorpion",
   "overriddenProperties":[],
   "parent":{
-    "name":"rock",
-    "path":"folders/Objetos/spells/rock.yy",
+    "name":"monsters",
+    "path":"folders/Objetos/monsters.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spell_rock",
-    "path":"sprites/spr_spell_rock/spr_spell_rock.yy",
+    "name":"spr_scorpion_static",
+    "path":"sprites/spr_scorpion_static/spr_scorpion_static.yy",
   },
   "spriteMaskId":null,
   "visible":true,
