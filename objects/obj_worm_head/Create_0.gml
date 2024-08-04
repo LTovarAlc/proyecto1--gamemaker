@@ -1,3 +1,3 @@
 // Variables de vida
-max_health = 500; // Vida máxima
-current_health = 500; // Vida actual
+max_health = 200; // Vida máxima
+current_health = 200; // Vida actual
