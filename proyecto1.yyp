@@ -131,7 +131,6 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_worm_head","path":"sprites/spr_worm_head/spr_worm_head.yy",},},
     {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},},
-    {"id":{"name":"workstatic","path":"sprites/workstatic/workstatic.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
