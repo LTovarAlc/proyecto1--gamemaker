@@ -24,4 +24,4 @@ if (instance_exists(obj_rudy)) {
 }
 
 // Configurar la alarma para el próximo lanzamiento
-alarm[0] = 180; // 2.5 segundos (60 steps por segundo * 
+alarm[0] = 180;

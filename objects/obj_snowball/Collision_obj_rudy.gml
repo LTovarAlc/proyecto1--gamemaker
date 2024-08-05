@@ -1,7 +1,7 @@
 
 if (!has_caused_damage && bbox_bottom > other.bbox_top && bbox_top < other.bbox_top) {
     // Reducir la vida de Rudy
-    other.current_health -= 20;
+    other.current_health -= 30;
 
     // Marcar que la bola ha causado daño
     has_caused_damage = true;
