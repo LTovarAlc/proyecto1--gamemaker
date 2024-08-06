@@ -22,7 +22,6 @@
     {"name":"inst_70EC4CB7","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_2C1F6496","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_39B00897","path":"rooms/rm_level2/rm_level2.yy",},
-    {"name":"inst_140CF20A","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_3F425542","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_7716AF30","path":"rooms/rm_level2/rm_level2.yy",},
     {"name":"inst_149BF599","path":"rooms/rm_level2/rm_level2.yy",},
@@ -42,7 +41,6 @@
     {"$GMRInstanceLayer":"","%Name":"spells","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"spells","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"entidades","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_407C0853","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_407C0853","objectId":{"name":"obj_rudy","path":"objects/obj_rudy/obj_rudy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":196.0,"y":142.0,},
-        {"$GMRInstance":"v1","%Name":"inst_140CF20A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_140CF20A","objectId":{"name":"obj_biter","path":"objects/obj_biter/obj_biter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":959.0,"y":553.0,},
         {"$GMRInstance":"v1","%Name":"inst_4D7C09EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D7C09EA","objectId":{"name":"obj_boss_snow","path":"objects/obj_boss_snow/obj_boss_snow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3519.0,"y":553.0,},
       ],"layers":[],"name":"entidades","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"objetos","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
