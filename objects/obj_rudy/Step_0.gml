@@ -85,13 +85,26 @@ if (keyboard_check_pressed(ord("Q")) && global.ice_power_enabled && shot_cooldow
     shot_cooldown = room_speed; // Ajustar a 1 segundo (room_speed es el número de pasos por segundo)
 }
 
-// Disminucion de barra de vida
+// obj_rudy cae al vacío
+if (y > room_height) {
+    current_health = 0;
+}
+
+// Disminución de barra de vida
 if (keyboard_check_pressed(ord("H"))) {
     current_health -= 10;
     if (current_health < 0) current_health = 0; // Asegurarse de que la vida no sea negativa
 }
 
 if (current_health <= 0) {
-    instance_destroy(); 
-    exit;
+    lives -= 1;
+    if (lives > 0) {
+        // Reiniciar la salud y la posición, o cualquier otra lógica necesaria
+        current_health = max_health;
+        // Coloca a Rudy en una posición segura o de inicio del nivel
+        x = start_x;
+        y = start_y;
+    } else {
+        game_restart();
+    }
 }

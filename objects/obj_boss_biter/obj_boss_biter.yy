@@ -30,7 +30,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_boss_biter_static",
     "path":"sprites/spr_boss_biter_static/spr_boss_biter_static.yy",

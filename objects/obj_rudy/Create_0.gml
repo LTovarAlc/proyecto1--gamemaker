@@ -20,7 +20,12 @@ global.rock_power_enabled = false;
 shot_cooldown = 0; // Temporizador de enfriamiento para el disparo
 
 // Variables de vida
+lives = 3;
 max_health = 170; // Vida máxima
 current_health = 170; // Vida actual
 
 is_being_pushed = false; // Variable para verificar si está siendo empujado
+
+// Variables para la posición inicial
+start_x = x;
+start_y = y;

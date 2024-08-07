@@ -66,6 +66,7 @@
   },
   "name":"proyecto1",
   "resources":[
+    {"id":{"name":"fnt_lives","path":"fonts/fnt_lives/fnt_lives.yy",},},
     {"id":{"name":"obj_biter","path":"objects/obj_biter/obj_biter.yy",},},
     {"id":{"name":"obj_bomper","path":"objects/obj_bomper/obj_bomper.yy",},},
     {"id":{"name":"obj_boss_biter","path":"objects/obj_boss_biter/obj_boss_biter.yy",},},
@@ -126,6 +127,7 @@
     {"id":{"name":"spr_fall_tree","path":"sprites/spr_fall_tree/spr_fall_tree.yy",},},
     {"id":{"name":"spr_flecha","path":"sprites/spr_flecha/spr_flecha.yy",},},
     {"id":{"name":"spr_ghast","path":"sprites/spr_ghast/spr_ghast.yy",},},
+    {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},
     {"id":{"name":"spr_item_ice","path":"sprites/spr_item_ice/spr_item_ice.yy",},},
     {"id":{"name":"spr_item_rock","path":"sprites/spr_item_rock/spr_item_rock.yy",},},
     {"id":{"name":"spr_jump","path":"sprites/spr_jump/spr_jump.yy",},},
@@ -165,9 +167,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
     {"roomId":{"name":"rm_level1","path":"rooms/rm_level1/rm_level1.yy",},},
     {"roomId":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
+    {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
