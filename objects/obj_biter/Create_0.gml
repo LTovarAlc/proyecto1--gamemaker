@@ -1,4 +1,4 @@
-// Evento "Create" de obj_biter
+
 
 // Asignar sprites
 biter_static = spr_biter_static;
