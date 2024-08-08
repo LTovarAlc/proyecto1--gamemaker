@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"artic",
-    "path":"folders/Sprites/artic.yy",
+    "path":"folders/artic.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

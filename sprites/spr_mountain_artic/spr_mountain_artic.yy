@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"bgs",
-    "path":"folders/Sprites/artic/bgs.yy",
+    "path":"folders/artic/bgs.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
