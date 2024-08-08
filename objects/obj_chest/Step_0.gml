@@ -14,7 +14,10 @@ if (!opened) {
         } else if (room == rm_level2) {
             // Room ártica
             instance_create_layer(x, y, "spells", obj_ice_item);
-        }
+        } else if (room = rm_level3){
+			//room nether
+			instance_create_layer(x, y, "spells", obj_fire_item)
+		}
     }
 } else {
     // Detener la animación una vez que termine

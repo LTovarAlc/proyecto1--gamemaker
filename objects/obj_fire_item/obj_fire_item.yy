@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_floor_nether",
+  "%Name":"obj_fire_item",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_fire_item","path":"objects/obj_fire_item/obj_fire_item.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_floor_nether",
+  "name":"obj_fire_item",
   "overriddenProperties":[],
   "parent":{
-    "name":"nether",
-    "path":"folders/Objetos/floor/nether.yy",
+    "name":"fire",
+    "path":"folders/Objetos/spells/fire.yy",
   },
-  "parentObjectId":{
-    "name":"obj_floor_desert",
-    "path":"objects/obj_floor_desert/obj_floor_desert.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_volcano_floor",
-    "path":"sprites/spr_volcano_floor/spr_volcano_floor.yy",
+    "name":"spr_item_fire",
+    "path":"sprites/spr_item_fire/spr_item_fire.yy",
   },
   "spriteMaskId":null,
   "visible":true,
